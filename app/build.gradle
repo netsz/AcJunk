@@ -1,0 +1,34 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "23.0.2"
+
+    defaultConfig {
+        applicationId "net.justudio.acjunk"
+        minSdkVersion 13
+        targetSdkVersion 15
+        versionCode 1
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:support-v4:23.0.1'
+    compile project(':jsoup-1.8.3')
+    compile project(':universal-image-loader-1.9.5')
+    compile project(':OneXListviewLibrary')
+    compile project(':org.apache.http.legacy')
+    compile project(':SlidingMenu')
+    compile project(':gestureimageview')
+    compile project(':viewPagerlibrary')
+}

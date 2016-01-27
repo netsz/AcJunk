@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+//用studio看一下gravity和layout_gravity的区别
+    <TextView
+      android:id="@+id/text"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="center_horizontal"
+      android:lineSpacingExtra="8dp"
+      android:paddingLeft="16dp"
+      android:paddingRight="16dp"
+      android:paddingTop="16dp"
+      android:paddingBottom="8dp"
+      android:gravity="center_vertical"
+      android:textSize="16sp"
+      android:text="12月21日电 美国航天局21日说，两名美国宇航员当天走出国际空间站，成功把空间站外抛锚的轨道车推回固定位置。 轨道车是安装在空间站外部的基本运输工具之一，主要作用是移动空间站上的巨大机械臂以完成不同任务。上周，地面控制人员在指挥轨道车移动时发生抛锚事件，抛锚位置距起点约10厘米。为了不妨碍23日俄罗斯货运飞船与空间站的对接，美国航天局匆忙安排了这次太空行走任务。"
+      />
+
+</LinearLayout>
